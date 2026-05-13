@@ -15,7 +15,7 @@ function App() {
   const addTask = () => {
     const newTask = {
       id: Math.random(),
-      text: "Enter your task here..",
+      text: "Enter your task here...",
       time: times,
       checked: false
     };
