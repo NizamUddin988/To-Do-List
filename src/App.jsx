@@ -1,4 +1,4 @@
-import { useState,useEffect } from 'react'
+import { useState} from 'react'
 import './App.css'
 
 function App() { 
@@ -15,7 +15,6 @@ function App() {
   const addTask = () => {
     const newTask = {
       id: Math.random(),
-      text: "Enter your task here...",
       time: times,
       checked: false
     };
@@ -58,6 +57,7 @@ function App() {
               <input 
                 type="text" 
                 className='enter_task' 
+                placeholder='Enter Your task here....'
                 value={t.text}
                 onChange={(e) => updateTaskText(t.id, e.target.value)}
                 style={{
